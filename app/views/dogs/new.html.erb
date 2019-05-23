@@ -1,0 +1,8 @@
+<h1>Create a Dog</h1>
+<%= form_with model: @dog do |form| %>
+    <%= form.text_field :name, placeholder: "name" %>
+    <%= form.text_field :phrase, placeholder: "phrase" %>
+    <%= form.submit %>
+<% end %>
+
+<%= link_to 'Back', dogs_path  %>
